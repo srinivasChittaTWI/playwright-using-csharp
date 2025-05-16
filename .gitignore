@@ -3,6 +3,7 @@ bin/
 debug/
 lib/
 obj/
+.playwright/
 PlaywrightTestAutomation/obj
 PlaywrightTestAutomation/obj/Debug/net8.0/PlaywrightTestAutomation.AssemblyInfo.cs
 PlaywrightTestAutomation/obj/Debug/net8.0/PlaywrightTestAutomation.AssemblyInfoInputs.cache
