@@ -3,3 +3,14 @@ bin/
 debug/
 lib/
 obj/
+PlaywrightTestAutomation/obj
+PlaywrightTestAutomation/obj/Debug/net8.0/PlaywrightTestAutomation.AssemblyInfo.cs
+PlaywrightTestAutomation/obj/Debug/net8.0/PlaywrightTestAutomation.AssemblyInfoInputs.cache
+PlaywrightTestAutomation/obj/Debug/net8.0/PlaywrightTestAutomation.assets.cache
+PlaywrightTestAutomation/obj/Debug/net8.0/PlaywrightTestAutomation.csproj.AssemblyReference.cache
+PlaywrightTestAutomation/obj/Debug/net8.0/PlaywrightTestAutomation.csproj.CoreCompileInputs.cache
+PlaywrightTestAutomation/obj/Debug/net8.0/PlaywrightTestAutomation.csproj.FileListAbsolute.txt
+PlaywrightTestAutomation/obj/Debug/net8.0/PlaywrightTestAutomation.dll
+PlaywrightTestAutomation/obj/Debug/net8.0/PlaywrightTestAutomation.pdb
+PlaywrightTestAutomation/obj/Debug/net8.0/ref/PlaywrightTestAutomation.dll
+PlaywrightTestAutomation/obj/Debug/net8.0/refint/PlaywrightTestAutomation.dll
