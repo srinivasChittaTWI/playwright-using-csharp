@@ -12,6 +12,16 @@
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <SourceRoot Include="/Users/srinivas.chitta/.nuget/packages/" />
   </ItemGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Content Include="$(NuGetPackageRoot)allure.commons/3.5.0.73/contentFiles/any/netstandard2.0/allureConfig.Template.json" Condition="Exists('$(NuGetPackageRoot)allure.commons/3.5.0.73/contentFiles/any/netstandard2.0/allureConfig.Template.json')">
+      <NuGetPackageId>Allure.Commons</NuGetPackageId>
+      <NuGetPackageVersion>3.5.0.73</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>allureConfig.Template.json</Link>
+    </Content>
+  </ItemGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Import Project="$(NuGetPackageRoot)xunit.runner.visualstudio/3.1.0/build/net8.0/xunit.runner.visualstudio.props" Condition="Exists('$(NuGetPackageRoot)xunit.runner.visualstudio/3.1.0/build/net8.0/xunit.runner.visualstudio.props')" />
     <Import Project="$(NuGetPackageRoot)xunit.core/2.8.1/build/xunit.core.props" Condition="Exists('$(NuGetPackageRoot)xunit.core/2.8.1/build/xunit.core.props')" />
@@ -24,5 +34,7 @@
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgValidation Condition=" '$(PkgValidation)' == '' ">/Users/srinivas.chitta/.nuget/packages/validation/2.4.18</PkgValidation>
     <Pkgxunit_analyzers Condition=" '$(Pkgxunit_analyzers)' == '' ">/Users/srinivas.chitta/.nuget/packages/xunit.analyzers/1.14.0</Pkgxunit_analyzers>
+    <PkgReportUnit Condition=" '$(PkgReportUnit)' == '' ">/Users/srinivas.chitta/.nuget/packages/reportunit/1.2.1</PkgReportUnit>
+    <PkgAspectInjector Condition=" '$(PkgAspectInjector)' == '' ">/Users/srinivas.chitta/.nuget/packages/aspectinjector/2.8.1</PkgAspectInjector>
   </PropertyGroup>
 </Project>

@@ -5,4 +5,4 @@ Feature: example page
 
   Scenario: navigate to example page
     Given I navigate to the home page
-    And I click on more information link
+    And I click on get started link

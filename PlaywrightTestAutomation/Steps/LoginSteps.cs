@@ -1,10 +1,13 @@
+using Allure.Xunit.Attributes;
+using Allure.Xunit.Attributes.Steps;
 using Microsoft.Playwright;
 using PlaywrightTestAutomation.Pages;
 using Reqnroll;
-using System.Threading.Tasks;
 
 namespace PlaywrightTestAutomation.Steps
 {
+    [AllureSuite("Login Suite")]
+    [AllureFeature("Login Feature")]
     [Binding]
     public class LoginSteps
     {
@@ -16,20 +19,20 @@ namespace PlaywrightTestAutomation.Steps
         {
             _context = context;
         }
-
+        
+       
         [Given("I navigate to the home page")]
         public async Task GivenINavigateToTheLoginPage()
         {
             _page = (IPage)_context["Page"];
             _loginPage = new LoginPage(_page);
-            await _loginPage.NavigateAsync("https://example.com/login");
+            await _loginPage.NavigateAsync("https://playwright.dev/");
         }
-
-        [Given("I click on more information link")]
+       
+        [Given("I click on get started link")]
         public async Task WhenIClickMoreInfo()
         {
-            await _loginPage.clickButton("More Information");
+            await _loginPage.clickButton("Get started");
         }
-
     }
 }
