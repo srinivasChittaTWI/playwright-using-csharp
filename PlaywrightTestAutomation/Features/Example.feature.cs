@@ -17,22 +17,21 @@ namespace PlaywrightTestAutomation.Features
     
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Reqnroll", "2.0.0.0")]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public partial class PlaywrightPageFeature : object, Xunit.IClassFixture<PlaywrightPageFeature.FixtureData>, Xunit.IAsyncLifetime
+    public partial class SearchForMacbookInAmazonFeature : object, Xunit.IClassFixture<SearchForMacbookInAmazonFeature.FixtureData>, Xunit.IAsyncLifetime
     {
         
         private global::Reqnroll.ITestRunner testRunner;
         
         private static string[] featureTags = ((string[])(null));
         
-        private static global::Reqnroll.FeatureInfo featureInfo = new global::Reqnroll.FeatureInfo(new global::System.Globalization.CultureInfo("en-US"), "Features", "playwright  page", "  As a registered user\n  I want to log in to the application\n  So that I can acce" +
-                "ss my account", global::Reqnroll.ProgrammingLanguage.CSharp, featureTags);
+        private static global::Reqnroll.FeatureInfo featureInfo = new global::Reqnroll.FeatureInfo(new global::System.Globalization.CultureInfo("en-US"), "Features", "search for macbook in amazon", null, global::Reqnroll.ProgrammingLanguage.CSharp, featureTags);
         
         private Xunit.Abstractions.ITestOutputHelper _testOutputHelper;
         
-#line 1 "Login.feature"
+#line 1 "Example.feature"
 #line hidden
         
-        public PlaywrightPageFeature(PlaywrightPageFeature.FixtureData fixtureData, Xunit.Abstractions.ITestOutputHelper testOutputHelper)
+        public SearchForMacbookInAmazonFeature(SearchForMacbookInAmazonFeature.FixtureData fixtureData, Xunit.Abstractions.ITestOutputHelper testOutputHelper)
         {
             this._testOutputHelper = testOutputHelper;
         }
@@ -128,15 +127,15 @@ namespace PlaywrightTestAutomation.Features
             await this.TestTearDownAsync();
         }
         
-        [Xunit.SkippableFactAttribute(DisplayName="navigate to playwright page and search for given text")]
-        [Xunit.TraitAttribute("FeatureTitle", "playwright  page")]
-        [Xunit.TraitAttribute("Description", "navigate to playwright page and search for given text")]
-        public async global::System.Threading.Tasks.Task NavigateToPlaywrightPageAndSearchForGivenText()
+        [Xunit.SkippableFactAttribute(DisplayName="launch amazon and search for mac book")]
+        [Xunit.TraitAttribute("FeatureTitle", "search for macbook in amazon")]
+        [Xunit.TraitAttribute("Description", "launch amazon and search for mac book")]
+        public async global::System.Threading.Tasks.Task LaunchAmazonAndSearchForMacBook()
         {
             string[] tagsOfScenario = ((string[])(null));
             global::System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new global::System.Collections.Specialized.OrderedDictionary();
-            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("navigate to playwright page and search for given text", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 6
+            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("launch amazon and search for mac book", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 3
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
@@ -146,26 +145,17 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 await this.ScenarioStartAsync();
+#line 4
+await testRunner.GivenAsync("user navigates to \"amazon.com\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "Given ");
+#line hidden
+#line 5
+await testRunner.AndAsync("user search for \"mac book\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
+#line hidden
+#line 6
+await testRunner.WhenAsync("user clicks on first search result", ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
+#line hidden
 #line 7
-    await testRunner.GivenAsync("I navigate to the home page", ((string)(null)), ((global::Reqnroll.Table)(null)), "Given ");
-#line hidden
-#line 8
-    await testRunner.AndAsync("I click on get started link", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
-#line hidden
-#line 9
-    await testRunner.WhenAsync("user click on search button", ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
-#line hidden
-#line 10
-    await testRunner.AndAsync("user enters text as \"context\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
-#line hidden
-#line 11
-    await testRunner.ThenAsync("validate that search results are displayed", ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
-#line hidden
-#line 12
-    await testRunner.AndAsync("user clicks on \"APIRequestContext\" link", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
-#line hidden
-#line 13
-    await testRunner.AndAsync("validate that \"Cookie management\" is displayed", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
+await testRunner.ThenAsync("validate that mac book image is loaded", ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
 #line hidden
             }
             await this.ScenarioCleanupAsync();
@@ -178,12 +168,12 @@ this.ScenarioInitialize(scenarioInfo);
             
             async global::System.Threading.Tasks.Task Xunit.IAsyncLifetime.InitializeAsync()
             {
-                await PlaywrightPageFeature.FeatureSetupAsync();
+                await SearchForMacbookInAmazonFeature.FeatureSetupAsync();
             }
             
             async global::System.Threading.Tasks.Task Xunit.IAsyncLifetime.DisposeAsync()
             {
-                await PlaywrightPageFeature.FeatureTearDownAsync();
+                await SearchForMacbookInAmazonFeature.FeatureTearDownAsync();
             }
         }
     }

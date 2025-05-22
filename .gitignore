@@ -4,7 +4,10 @@ debug/
 lib/
 obj/
 .playwright/
-PlaywrightTestAutomation/obj
+PlaywrightTestAutomation/obj/
+PlaywrightTestAutomation/obj/PlaywrightTestAutomation.csproj.nuget.dgspec.json
+PlaywrightTestAutomation/obj/project.assets.json
+PlaywrightTestAutomation/obj/project.nuget.cache
 PlaywrightTestAutomation/obj/Debug/net8.0/PlaywrightTestAutomation.AssemblyInfo.cs
 PlaywrightTestAutomation/obj/Debug/net8.0/PlaywrightTestAutomation.AssemblyInfoInputs.cache
 PlaywrightTestAutomation/obj/Debug/net8.0/PlaywrightTestAutomation.assets.cache
